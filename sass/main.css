@@ -1,0 +1,244 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 479px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1070px) {
+  .container {
+    width: 1070px;
+  }
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  margin: -1px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+:root {
+  --text-color: #000;
+  --blue: #00bff3;
+  --grey: #777;
+  --white: #fff;
+  --hover: #cb0000;
+}
+
+.header {
+  background: var(--blue);
+  padding: 30px 0;
+}
+
+.header__direction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__direction p {
+  font-size: 16px;
+  color: var(--white);
+  line-height: 1.15;
+  width: 149px;
+}
+.header__direction p:nth-child(3) {
+  font-size: 30px;
+  margin: 0 27px 0 178px;
+  width: 196px;
+}
+.header__direction a {
+  color: var(--white);
+  font-size: 16px;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  margin-right: 47px;
+}
+
+.header__logo {
+  margin-right: 22px;
+}
+
+.header__social-direction {
+  display: flex;
+  gap: 10px;
+}
+
+.hero {
+  padding: 24px 55px;
+}
+
+.hero__rating-direction {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.hero__rating-direction p {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 35px;
+  line-height: 1.16;
+  font-weight: bold;
+}
+.hero__rating-direction a {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 35px;
+  line-height: 1.16;
+  font-weight: bold;
+  color: var(--text-color);
+  border-bottom: 1px solid #E5E5E5;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.hero__rating-direction a:hover, .hero__rating-direction a:focus {
+  color: var(--hover);
+  border-bottom: 1px solid #CB0000;
+}
+
+.hero__star-direction {
+  display: flex;
+  gap: 3px;
+  margin: 23px 20px 42px 0;
+}
+.hero__star-direction li:nth-child(6) {
+  margin-right: 20px;
+}
+
+.hero__feedbackrait-direction {
+  display: flex;
+}
+.hero__feedbackrait-direction h3 {
+  font-weight: normal;
+  font-size: 14px;
+}
+.hero__feedbackrait-direction p {
+  font-size: 14px;
+  font-weight: bold;
+}
+.hero__feedbackrait-direction li:nth-child(1) {
+  margin-right: 35px;
+}
+.hero__feedbackrait-direction li:nth-child(2) {
+  background: var(--blue);
+  margin-right: 24px;
+  padding: 12px 7px;
+}
+.hero__feedbackrait-direction li:nth-last-child(-n+4) {
+  margin-right: 16px;
+}
+
+.hero__many-days {
+  width: 160px;
+  font-size: 30px;
+  line-height: 1.03;
+}
+.hero__many-days span {
+  font-size: 88px;
+  font-weight: bold;
+  line-height: 1.16;
+  color: var(--grey);
+}
+
+.many-days__indent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  padding: 0 0 67px 0;
+}
+
+.price__direction {
+  display: flex;
+  gap: 40px;
+}
+.price__direction a {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--text-color);
+  border-bottom: 1px solid #E5E5E5;
+  text-decoration: none;
+}
+.price__direction a:hover, .price__direction a:focus {
+  color: var(--hover);
+  border-bottom: 1px solid #CB0000;
+}
+.price__direction h2 {
+  display: flex;
+  margin: 24px 11px;
+  justify-content: space-between;
+  font-size: 35px;
+}
+
+.price__sale {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.price__sale span {
+  color: var(--grey);
+}
+.price__sale span::before {
+  display: flex;
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: var(--hover);
+  position: absolute;
+  top: 50%;
+  left: 95%;
+}/*# sourceMappingURL=main.css.map */

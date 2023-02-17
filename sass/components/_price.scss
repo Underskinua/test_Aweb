@@ -1,0 +1,51 @@
+.price {
+    padding: 0 0 67px 0;
+}
+
+.price__direction {
+    display: flex;
+    gap: 40px;
+ 
+    & a {
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+        color: var(--text-color);
+        border-bottom: 1px solid #E5E5E5;
+            text-decoration: none;
+       
+        &:hover,
+        &:focus {
+            color: var(--hover);
+            border-bottom: 1px solid #CB0000;
+        }
+    }
+
+    & h2 {
+        display: flex;
+        margin: 24px 11px;
+        justify-content: space-between;
+        font-size: 35px;
+    }
+}
+
+.price__sale {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    & span {
+        color: var(--grey);
+    }
+
+    & span::before {
+        display: flex;
+        content: "";
+        width: 30px;
+        height: 1px;
+        background: var(--hover);
+        position: absolute;
+        top: 50%;
+        left: 95%;
+    }
+}
