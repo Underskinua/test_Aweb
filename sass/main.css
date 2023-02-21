@@ -253,13 +253,44 @@ img {
   line-height: 1.04;
   margin-bottom: 7px;
 }
+.info h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-weight: 1.15;
+  margin-bottom: 7px;
+}
+.info h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 15;
+  margin-bottom: 7px;
+}
 .info span {
   line-height: 1.38;
   font-weight: bold;
 }
-.info p:nth-child(2) {
+.info p {
   font-weight: normal;
-  margin-top: 26px;
+  margin-bottom: 20px;
+}
+
+.water {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-style: oblique;
+  margin-left: 60px;
+  width: 704px;
+}
+.water::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 120px;
+  background: var(--blue);
+  margin-left: -16px;
 }
 
 .short {
@@ -269,6 +300,7 @@ img {
 
 .info__find-answear__wrapper {
   display: flex;
+  position: relative;
 }
 .info__find-answear__wrapper h3 {
   font-size: 22px;
@@ -278,6 +310,36 @@ img {
 }
 .info__find-answear__wrapper p {
   line-height: 1.38;
+}
+
+.info__find-answear__wrapper__health-man {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  width: 227px;
+  text-align: start;
+}
+.info__find-answear__wrapper__health-man p:nth-child(1) {
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 1.16;
+  margin-bottom: 4px;
+  color: var(--grey);
+}
+.info__find-answear__wrapper__health-man p:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 1.03;
+  display: flex;
+  width: 227px;
+  margin-bottom: 8px;
+}
+.info__find-answear__wrapper__health-man p:nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.26;
+  color: var(--grey);
 }
 
 .info__find li {
