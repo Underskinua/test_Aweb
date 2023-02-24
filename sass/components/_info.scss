@@ -8,6 +8,10 @@
         font-weight: 700;
         line-height: 1.04;
         margin-bottom: 7px;
+
+        @media screen and (min-width: 320px) {
+            font-size: 40px;
+        }
     }
 
     & h3 {
@@ -45,26 +49,41 @@
     margin-left: 60px;
     width: 704px;
 
-    &::before { 
-        
+    @media screen and (min-width: 320px) {
+        margin-left: 30px;
+        width: 260px;
+    }
+
+    &::before {         
         position: absolute;
         content: "";
         width: 8px;
-        height: 120px;
+        // height: 120px;
         background: var(--blue);
-        margin-left: -16px;
+        margin-left: -16px;  
         
+        @media screen and (min-width: 320px) {
+            height: 40vh;
+        }
     }
 }
 
 .short {
     display: flex;
     width: 776px;
+
+    @media screen and (min-width: 320px) {
+        width: 290px;
+    }
 }
 
 .info__find-answear__wrapper {
     display: flex;
     position: relative;
+
+    @media screen and (min-width: 320px) {
+        display: block;        
+    }
 
     & h3 {
         font-size: 22px;
@@ -85,6 +104,10 @@
     width: 227px;
     text-align: start;
 
+    @media screen and (min-width: 320px) {
+        position: static;
+        width: 290px;       
+    }
 
     & p:nth-child(1) {
         font-family: "Trebuchet MS", sans-serif;
@@ -104,19 +127,66 @@
         margin-bottom: 8px;
     }
 
-         & p:nth-child(3) {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 1.26;
-             color: var(--grey);
-         }
+    & p:nth-child(3) {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.26;
+         color: var(--grey);
+    }
 }
-
-
 
 .info__find {
     & li {
         margin-left: 7px;
+    }    
+}
+
+
+
+.info__table__ {    
+    display: flex;
+    flex-wrap: wrap;    
+    margin: 29px auto;        
+    word-break: break-all;
+
+    @media screen and (min-width: 320px) {
+        width: 290px;
+        
     }
     
+       
+    & li {
+        display: flex;       
+        flex-direction: column;
+        flex-basis: calc(100% / 6); 
+        font-size: 10px;       
+        line-height: 1.5;   
+        
+        @media screen and (min-width: 320px) {
+            width: 80px;
+        }              
+    }
+
+    & li:nth-child(-n+6) {
+        background: var(--grey);
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.15;        
+        padding: 10px 0 10px 0;
+
+        @media screen and (min-width: 320px) {
+            font-size: 11px;
+        }                      
+    }
+
+    & .twelve {        
+        padding: 13px 0 13px 0;
+        font-size: 10px;        
+    }
+
+    & li span {
+      font-weight: bold;
+      font-size: 10px;
+    }
 }
+

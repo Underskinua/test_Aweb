@@ -23,22 +23,31 @@
       <nav>
         <div class="container">
           <div class="header__direction">
-            <svg class="header__logo" width="179" height="44">
-              <use href="./images/sprite.svg#logo-suntour"></use>
-            </svg>
+            <div class="header__description">
+              <svg class="header__logo" width="179" height="44">
+                <use href="./images/sprite.svg#logo-suntour"></use>
+              </svg>
 
-            <p>Сеть турагенств «Солнце в кругу»</p>
+              <p>Сеть турагенств «Солнце в кругу»</p>
 
-            <p>044 123-45-67</p>
-            <a href="#">обратный звонок</a>
+              <p>044 123-45-67</p>
+              <a href="tel:0441234567">обратный звонок</a>
+            </div>
 
             <ul class="header__social-direction list">
-              <li>
+              <li class="header__social-icon">
+                <a href="tel:0441234567">
+                  <svg width="32" height="32">
+                    <use href="./images/sprite.svg#phone_icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__social-icon">
                 <svg width="32" height="32">
                   <use href="./images/sprite.svg#facebook-logo-blue"></use>
                 </svg>
               </li>
-              <li>
+              <li class="header__social-icon">
                 <svg width="32" height="32">
                   <use href="./images/sprite.svg#g-logo-blue"></use>
                 </svg>
@@ -65,54 +74,58 @@
                   <h2><a href="#">Aquamarine hotel</a></h2>
                 </li>
                 <li>
-                  <svg width="27" height="26">
-                    <use href="./images/sprite.svg#star-orange"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="27" height="26">
-                    <use href="./images/sprite.svg#star-orange"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="27" height="26">
-                    <use href="./images/sprite.svg#star-orange"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="27" height="26">
-                    <use href="./images/sprite.svg#star-Stroke"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="27" height="26">
-                    <use href="./images/sprite.svg#star-Stroke"></use>
-                  </svg>
+                  <ul class="star-line list">
+                    <li>
+                      <svg width="27" height="26">
+                        <use href="./images/sprite.svg#star-orange"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="27" height="26">
+                        <use href="./images/sprite.svg#star-orange"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="27" height="26">
+                        <use href="./images/sprite.svg#star-orange"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="27" height="26">
+                        <use href="./images/sprite.svg#star-Stroke"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="27" height="26">
+                        <use href="./images/sprite.svg#star-Stroke"></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </li>
                 <li><p>$256</p></li>
               </ul>
 
               <ul class="hero__feedbackrait-direction list">
-                <li>
+                <li class="feedback-line">
                   <h3>Оценка отеля</h3>
                   <p>45 отзывов</p>
                 </li>
-                <li>
+                <li class="feedback-line">
                   <p>8,4</p>
                 </li>
                 <li>
                   <h3>Номер</h3>
                   <p>8,9</p>
                 </li>
-                <li>
+                <li class="feedback-line">
                   <h3>Питание</h3>
                   <p>8,1</p>
                 </li>
-                <li>
+                <li class="feedback-line">
                   <h3>Сервис</h3>
                   <p>7,9</p>
                 </li>
-                <li>
+                <li class="feedback-line">
                   <h3>Инфраструктура</h3>
                   <p>8,9</p>
                 </li>
@@ -242,39 +255,35 @@
             хлоропластов растений в зелёный цвет.
           </p>
           <p>Так же интересна физическая причина наших понятий красоты.</p>
-          <table>
-            <thead>
-              <tr>
-                <th>Хлорофилл a</th>
-                <th>Хлорофилл b</th>
-                <th>Хлорофилл c1</th>
-                <th>Хлорофилл c2</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Формула</td>
-                <td>C55H44O5N4Mg</td>
-                <td>C55H44O5N4Mg</td>
-                <td>C55H44O5N4Mg</td>
-                <td>C55H44O5N4Mg</td>
-              </tr>
-              <tr>
-                <td>C2 группа</td>
-                <td>-C55</td>
-                <td>-C55</td>
-                <td>-C55</td>
-                <td>-C55</td>
-              </tr>
-              <tr>
-                <td>C3 группа</td>
-                <td>C55H44O5N4Mg</td>
-                <td>C55H44O5N4Mg</td>
-                <td>C55H44O5N4Mg</td>
-                <td>C55H44O5N4Mg</td>
-              </tr>
-            </tbody>
-          </table>
+
+          <ul class="info__table__ list">
+            <li></li>
+            <li>Хлорофилл a</li>
+            <li>Хлорофилл b</li>
+            <li>Хлорофилл c1</li>
+            <li>Хлорофилл c2</li>
+            <li></li>
+
+            <li class="twelve"><span>Формула</span></li>
+            <li class="twelve">C55H44O5N4Mg</li>
+            <li class="twelve">C55H44O5N4Mg</li>
+            <li class="twelve">C55H44O5N4Mg</li>
+            <li class="twelve">C55H44O5N4Mg</li>
+            <li></li>
+
+            <li class="twelve"><span>C2 группа</span></li>
+            <li class="twelve">-C55</li>
+            <li class="twelve">-C55</li>
+            <li class="twelve">-C55</li>
+            <li class="twelve">-C55</li>
+            <li></li>
+            <li><span>C3 группа</span></li>
+            <li>C55H44O5N4Mg</li>
+            <li>C55H44O5N4Mg</li>
+            <li>C55H44O5N4Mg</li>
+            <li>C55H44O5N4Mg</li>
+            <li></li>
+          </ul>
 
           <p>
             Как найти эти консервативные признаки? Наиболее часто рассматривают
@@ -296,8 +305,12 @@
       <div class="container">
         <div class="footer__direction">
           <div class="footer__description">
-            <p>2019 Тестовое задание на вакансию верстальщика в компанию</p>
-            <a href="#">Aweb</a>
+            <p>
+              2019 Тестовое задание на вакансию верстальщика в компанию<a
+                href="#"
+                >Aweb</a
+              >
+            </p>
           </div>
           <ul class="footer__social-direction list">
             <li>
