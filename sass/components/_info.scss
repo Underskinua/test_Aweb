@@ -77,25 +77,26 @@
     &::before {         
         position: absolute;
         content: "";
-        width: 8px;        
+        width: 8px;      
+        height: 110%;
         background: var(--blue);
         margin-left: -16px;  
         
-        @media screen and (min-width: 320px) {
-            height: 27vh;
-        }
+        // @media screen and (min-width: 320px) {
+            
+        // }
 
-        @media screen and (min-width: 480px) {
-            height: 25vh;
-        }
+        // @media screen and (min-width: 480px) {
+            // height: 25vh;
+        // }
 
-        @media screen and (min-width: 768px) {
-            height: 13vh;
-        }
+        // @media screen and (min-width: 768px) {
+            // height: 13vh;
+        // }
 
-        @media screen and (min-width: 1070px) {
-            height: 120px;
-        }
+        // @media screen and (min-width: 1070px) {
+            // height: 120px;
+        // }
     }
 }
 

@@ -2,8 +2,7 @@
     padding: 0 0 67px 0;
 }
 
-.price__direction {
-    display: flex;
+.price__direction {    
     gap: 40px;
 
     @media screen and (min-width: 320px) {
@@ -53,18 +52,18 @@
     }
 
     & img {
+
+        width: 100%;
+        margin: 0 auto;
         @media screen and (min-width: 320px) {
-            width: 90vw;  
             height: 220px;        
         }
 
         @media screen and (min-width: 768px) {
-            width: 45vw;
             height: 280px;
         }
 
         @media screen and (min-width: 1070px) {
-            width: 500px;
             height: 280px;
         }
     }

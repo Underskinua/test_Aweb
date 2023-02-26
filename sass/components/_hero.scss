@@ -9,19 +9,19 @@
    }
 
    & img {
-    @media screen and (min-width: 320px) {
-        width: 90vw;
-        height: 220px;
-        margin: 0 auto;
-    }
 
-    @media screen and (min-width: 768px) {
-        width: 95vw;
-        height: 390px;
-    }
+    width: 100%;
+    margin: 0 auto;
+        @media screen and (min-width: 320px) {        
+            height: 220px;
+        
+        }
 
-        @media screen and (min-width: 1070px) {
-            width: 1040px;
+        @media screen and (min-width: 768px) {        
+            height: 390px;
+        }
+
+        @media screen and (min-width: 1070px) {            
             height: 533px;
         }
    }   
@@ -31,6 +31,7 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    position: relative;
 
     & p {
         font-family: "Trebuchet MS", Arial, sans-serif;
@@ -83,11 +84,10 @@
     display: flex;    
 
     @media  screen and (min-width: 320px) {
-        width: 90vw;
+        width: 100%;
         flex-wrap: wrap;
         gap: 10px;
-        justify-content: space-between;
-        position: relative;
+        justify-content: space-between;       
     }
 
     @media screen and (min-width: 768px) {        
@@ -145,25 +145,26 @@
 }
 
  .hero__many-days {
-     width: 160px;     
-     line-height: 1.03;
+    width: 160px;     
+    line-height: 1.03;
+    position: absolute;
+    text-align: center;
 
-     @media screen and (min-width: 320px) {
-        position: absolute;
-        left: 50%;
-        top: 45%;
+     @media screen and (min-width: 320px) {        
+        right: 8%;
+        top: 70%;
         font-size: 25px;
      }
 
      @media screen and (min-width: 480px) {
         top: 39%;
-        left: 65%;
+        right: 65%;
      }
 
      @media screen and (min-width: 768px) {
         font-size: 30px;
         top: 48%;
-        left: 76%;
+        right: 76%;
      }
 
      @media screen and (min-width: 1070px) {
