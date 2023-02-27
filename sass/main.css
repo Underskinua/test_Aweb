@@ -217,7 +217,6 @@ img {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  position: relative;
 }
 .hero__rating-direction p {
   font-family: "Trebuchet MS", Arial, sans-serif;
@@ -334,31 +333,30 @@ img {
   line-height: 1.03;
   position: absolute;
   text-align: center;
+  margin: 0 auto;
 }
 @media screen and (min-width: 320px) {
   .hero__many-days {
+    top: 28%;
     right: 0;
-    top: 50%;
     font-size: 25px;
   }
 }
 @media screen and (min-width: 480px) {
   .hero__many-days {
-    right: 0;
-    top: 37%;
+    top: -3%;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__many-days {
     font-size: 30px;
-    top: 48%;
+    top: -12%;
     right: 10%;
   }
 }
 @media screen and (min-width: 1070px) {
   .hero__many-days {
-    top: 42%;
-    right: 25%;
+    top: -20%;
   }
 }
 .hero__many-days span {
@@ -380,6 +378,7 @@ img {
 .many-days__indent {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .price {
