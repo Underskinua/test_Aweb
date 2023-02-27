@@ -13,8 +13,7 @@
 
     @media screen and (min-width: 768px) {
         align-items: center;
-    }
-    
+    }    
 
     & a {
         display: flex;           
@@ -52,8 +51,7 @@
     }    
 }
 
-.header__description {    
-    
+.header__description {        
     & p {
             font-size: 16px;
             color: var(--white);
